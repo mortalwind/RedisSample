@@ -5,7 +5,7 @@ using System.ComponentModel.DataAnnotations;
 namespace RedisSample.API.Models;
 
 
-[Document(StorageType = StorageType.Json, Prefixes = new[] { "users"})]
+[Document(StorageType = StorageType.Json, Prefixes = new[] { "User"})]
 public class User
 {
 
@@ -14,9 +14,7 @@ public class User
     [Indexed]
     public string Id { get; set; } = $"{Guid.NewGuid()}";
 
-
     [Required]
-    [Indexed]
     public string UserName { get; set; } = string.Empty;
 
     [Required]

@@ -4,12 +4,10 @@ using System.ComponentModel.DataAnnotations;
 
 namespace RedisSample.API.Models;
 
-[Document(StorageType = StorageType.Json, Prefixes = new[] { "carts" } )]
 public class Cart
 {
     [Required]
     [Indexed]
-    [RedisIdField]
     public string Id { get; set; } = $"{Guid.NewGuid}";
 
     [Required]

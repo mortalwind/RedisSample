@@ -17,11 +17,23 @@ public class UsersController : ControllerBase
     }
 
     [HttpGet]
+    public async Task<ActionResult<IList<User>>> GetAllUsersAsync()
+    {
+
+        var users = await _repository.GetUsers();
+       
+        return Ok(users?.ToList());
+    }
+
+    [HttpGet]
     [Route("/{id}")]
-    public async Task<User> GetUserAsync([FromRoute]string id) {
+    public async Task<ActionResult<User>> GetUserAsync([FromRoute]string id) {
 
         var user = await _repository.GetUser(id);
-        return await Task.FromResult(user);
+        if (user == null) {
+            return NotFound();
+        }
+        return Ok(user);
     }
 
     [HttpPost]

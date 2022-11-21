@@ -1,4 +1,5 @@
-﻿using System.ComponentModel.DataAnnotations;
+﻿using Redis.OM.Modeling;
+using System.ComponentModel.DataAnnotations;
 
 namespace RedisSample.API.Models;
 
@@ -6,10 +7,13 @@ public class Product
 {
 
     [Required]
-    public string Id { get; set; } = $"products:{Guid.NewGuid()}";
+    [Indexed]
+    public string Id { get; set; } = $"{Guid.NewGuid()}";
 
 
     [Required]
+    [Indexed]
+    [Searchable]
     public string Name { get; set; } = string.Empty;
 
     [Required]

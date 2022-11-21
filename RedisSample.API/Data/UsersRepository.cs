@@ -29,7 +29,8 @@ public class UsersRepository : IUsersRepository
 
     public async Task<User> GetUser(string id)
     {
-        return await _users.SingleOrDefaultAsync(user => user.Id.Equals(id)) ?? new User();
+        return await _users.SingleOrDefaultAsync(user => user.Id ==id);
+        
     }
 
     public async Task<IEnumerable<User>> GetUsers()
