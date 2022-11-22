@@ -2,7 +2,7 @@
 
 using System.ComponentModel.DataAnnotations;
 
-namespace RedisSample.API.Models;
+namespace RedisSample.UserAPI.Models;
 
 public class Cart
 {

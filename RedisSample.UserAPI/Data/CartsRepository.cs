@@ -1,9 +1,9 @@
 ﻿using Redis.OM.Searching;
 using Redis.OM;
-using RedisSample.API.Abstractions;
-using RedisSample.API.Models;
+using RedisSample.UserAPI.Abstractions;
+using RedisSample.UserAPI.Models;
 
-namespace RedisSample.API.Data;
+namespace RedisSample.UserAPI.Data;
 
 public class CartsRepository : ICartsRepository
 {

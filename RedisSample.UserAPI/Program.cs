@@ -1,8 +1,8 @@
 using Redis.OM;
 
-using RedisSample.API.Abstractions;
-using RedisSample.API.Data;
-using RedisSample.API.Services;
+using RedisSample.UserAPI.Abstractions;
+using RedisSample.UserAPI.Data;
+using RedisSample.UserAPI.Services;
 
 var builder = WebApplication.CreateBuilder(args);
 

@@ -1,6 +1,6 @@
-﻿using RedisSample.API.Models;
+﻿using RedisSample.UserAPI.Models;
 
-namespace RedisSample.API.Abstractions;
+namespace RedisSample.UserAPI.Abstractions;
 
 public interface IUsersRepository
 {

@@ -1,6 +1,6 @@
 {
   "profiles": {
-    "RedisSample.API": {
+    "RedisSample.UserAPI": {
       "commandName": "Project",
       "launchBrowser": true,
       "launchUrl": "swagger",

@@ -1,8 +1,8 @@
 ﻿using Redis.OM;
 using Redis.OM.Searching;
-using RedisSample.API.Abstractions;
-using RedisSample.API.Models;
-namespace RedisSample.API.Data;
+using RedisSample.UserAPI.Abstractions;
+using RedisSample.UserAPI.Models;
+namespace RedisSample.UserAPI.Data;
 
 public class UsersRepository : IUsersRepository
 {

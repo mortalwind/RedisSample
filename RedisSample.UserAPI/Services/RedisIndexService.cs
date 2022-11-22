@@ -1,7 +1,7 @@
 ﻿using Redis.OM;
-using RedisSample.API.Models;
+using RedisSample.UserAPI.Models;
 
-namespace RedisSample.API.Services
+namespace RedisSample.UserAPI.Services
 {
     public class RedisIndexService : IHostedService
     {

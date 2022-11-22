@@ -1,8 +1,8 @@
 ﻿using Microsoft.AspNetCore.Mvc;
-using RedisSample.API.Abstractions;
-using RedisSample.API.Models;
+using RedisSample.UserAPI.Abstractions;
+using RedisSample.UserAPI.Models;
 
-namespace RedisSample.API.Controllers;
+namespace RedisSample.UserAPI.Controllers;
 
 [Route("api/[controller]")]
 [ApiController]
